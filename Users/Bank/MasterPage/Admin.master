@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Users_Bank_MasterPage_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+       <div id="container">
+		<div id="header" align:"center">
+        	<h1>Secure Mining Of<span class="off"> Horizontal DataBases</span></h1>
+            <asp:Image ID="Image2" runat="server" Height="80px" 
+                ImageUrl="~/Users/Bank/images/1.jpg" Width="90px" />
+           
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="#">Home</a></li>
+                <li class="menuitem"><a href="../AddLoan/AddLoanDetails.aspx">Add Loan</a></li>
+                  <li class="menuitem"><a href="../ViewLoan/ViewLoan.aspx">View Loan Details</a></li>
+                  <li class="menuitem"><a href="../UpdateLoan/EditLoan.aspx">Update Loan Details</a></li>
+                  <li class="menuitem"><a href="../DebitDeposit/Deposit_Debit.aspx">Debit Card</a></li>
+                  <li class="menuitem"><a href="../CreditDeposit/Credit_Deposit.aspx">Credit Card</a></li>
+                    <li class="menuitem"><a href="../../../HomePage/Login/Login.aspx">Log Out</a></li>
+
+                </ul>
+        </div>
+		<div id="content">
+        
+        
+        <div id="content_top"></div>
+        <div id="content_main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="content_bottom"></div>
+            
+            <div id="footer"><h3><a href="http://www.allievo.in/">Allievo Learning Centre</a></h3></div>
+      </div>
+   </div>
+</div>
+    </form>
+</body>
+</html>

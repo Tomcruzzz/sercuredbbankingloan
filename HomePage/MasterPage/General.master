@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="General.master.cs" Inherits="HomePage_MasterPage_General" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+       <div id="container">
+		<div id="header" align:"center">
+        	<h1>Secure Mining Of<span class="off"> Horizontal DataBases</span></h1>
+            <asp:Image ID="Image2" runat="server" Height="80px" 
+                ImageUrl="~/HomePage/images/1.jpg" Width="90px" />
+           
+        </div> 
+        <div>
+        </div>  
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="../Home/Home.aspx">Home</a></li>
+                <li class="menuitem"><a href="../Login/Login.aspx">Login</a></li>
+                <li class="menuitem"><a href="../Registration/Bank_Registration.aspx">Bank Registration</a></li>
+                </ul>
+        </div>
+		<div id="content">
+        
+        
+        <div id="content_top"></div>
+        <div id="content_main">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</div>
+        <div id="content_bottom"></div>
+            
+            <div id="footer"><h3><a href="http://www.allievo.in/">Allievo Learning Centre</a></h3></div>
+      </div>
+   </div>
+</div>
+   </form>
+</body>
+</html>
